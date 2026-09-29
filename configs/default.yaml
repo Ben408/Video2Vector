@@ -1,0 +1,35 @@
+sample_fps: 5
+write_every_seconds: 1.0
+max_seconds: null
+
+detection:
+  model: yolo11n.pt
+  conf: 0.35
+  person_class: 0
+  animal_classes: [14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+  # COCO: bird, cat, dog, horse, sheep, cow, elephant, bear, zebra, giraffe
+
+tracking:
+  tracker: bytetrack.yaml
+
+patient:
+  # longest_track | largest_box | enrollment_first_face
+  mode: longest_track
+  min_track_seconds: 1.0
+
+face:
+  max_faces: 1
+  min_detection_confidence: 0.5
+
+pulse:
+  window_seconds: 4.0
+  min_face_fraction: 0.6
+  max_motion: 25.0
+
+audio:
+  hop_seconds: 1.0
+
+eeg:
+  target_sfreq: 128
+  window_seconds: 1.0
+  bandpass_hz: [0.5, 40.0]

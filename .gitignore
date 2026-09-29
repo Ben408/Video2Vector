@@ -1,0 +1,44 @@
+# Video2Vector — local artifacts
+
+# Large / regenerable media and model weights
+data/**
+!data/**/
+!data/**/README*
+!data/**/README*.txt
+!data/**/.gitkeep
+outputs/
+*.edf
+*.edf.gz
+*.bdf
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.parquet
+*.sqlite
+*.db
+*.pt
+*.onnx
+*.pkl
+*.task
+
+# Keep tiny test fixtures
+!tests/fixtures/
+!tests/fixtures/**
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+.gradio/
