@@ -1,0 +1,28 @@
+Video2Vector
+============
+
+This product’s original source code is licensed under the MIT License
+(see the LICENSE file in this repository).
+
+Third-party software
+--------------------
+
+This project depends on (among others):
+
+  - Ultralytics (YOLO) — GNU Affero General Public License v3.0 (AGPL-3.0).
+    Commercial / proprietary use without open-sourcing the combined work
+    typically requires an Ultralytics Enterprise license:
+    https://www.ultralytics.com/license
+
+  - MediaPipe — Apache License 2.0
+  - Gradio — Apache License 2.0
+  - OpenCV — Apache License 2.0
+  - NumPy, SciPy — BSD-style licenses
+  - pandas — BSD-3-Clause
+  - PyArrow — Apache License 2.0
+  - librosa — ISC License
+  - MNE-Python — BSD-3-Clause
+  - edfio — Apache License 2.0 (verify package metadata)
+
+Model weights and any media you download separately remain under their
+respective upstream terms and are not redistributed by this repository by default.

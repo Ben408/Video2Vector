@@ -101,4 +101,19 @@ Timeline columns include posture, pose motion, face AU proxies (left/right), pai
 
 ## License / attribution
 
-Code is provided as an open prototype for research and demos. Third-party weights (Ultralytics YOLO, MediaPipe) and any stock media you download remain under their respective licenses. Do not commit clinical recordings or identifiable patient media.
+**Video2Vector code** is released under the **MIT License** (see [`LICENSE`](LICENSE)).
+
+### Third-party components
+
+| Component | License | Notes |
+|-----------|---------|--------|
+| **Your/our application code** | MIT | This repository |
+| **Ultralytics YOLO** (detect / track / pose) | **AGPL-3.0** | Proprietary or closed products need an [Ultralytics Enterprise](https://www.ultralytics.com/license) license (or a different detector) |
+| **MediaPipe** (face landmarks / blendshapes) | Apache-2.0 | |
+| **Gradio** (UI) | Apache-2.0 | |
+| **OpenCV, NumPy, SciPy, pandas, PyArrow, etc.** | BSD / Apache-style | See each package |
+| **Downloaded stock / CC0 media** | Per source | Not shipped in-repo; keep local under `data/` |
+
+MIT covers *this* project’s source. A deployment that **embeds Ultralytics YOLO** must still comply with YOLO’s AGPL-3.0 (or Enterprise). See also [`NOTICE`](NOTICE).
+
+Do not commit clinical recordings or identifiable patient media.

@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Generic patient-timeline video and EEG feature pipeline"
 readme = "README.md"
 requires-python = ">=3.10"
+license = { text = "MIT" }
 dependencies = [
   "numpy>=1.24,<2.3",
   "opencv-python-headless>=4.8",
